@@ -1,0 +1,141 @@
+# 版本控制
+version = "1.0.2"
+
+# 更新管理
+jump = ""
+
+# 应用管理
+[application]
+eureka = "registe"
+config = "config"
+zuul = "gateway"
+apps = ["huayun-lab-redis", "huayun-lab-auth", "huayun-lab-system", "huayun-lab-competition", "huayun-lab-course", "huayun-lab-qa", "huayun-lab-quartz", "huayun-lab-resource", "huayun-lab-service-config", "huayun-lab-service-exam", "huayun-lab-service-report", "huayun-lab-report", "huayun-lab-data"]
+
+
+# 镜像仓库设置
+[registry]
+    [registry.cloud]
+    name = "Huawei Cloud"
+    domain = "swr.cn-east-2.myhuaweicloud.com"
+    group = "arch-prod"
+    username = "cn-east-2@DNHTXMGF2ZMROWH6S7UW"
+    password = "b305ee2299d9a8b24a9ca4d7c9325c0f83ab3a3dd18"
+
+    [registry.local]
+    name = "Harbor"
+    domain = "reg.zjhw.com"
+    username = "admin"
+    password = "Harbor12345"
+
+# 服务器分布
+[server]
+    [server.app.master]
+    name = "Kubernetes Master"
+    ip = ["192.168.66.86"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.app.node]
+    name = "Kubernetes Node"
+    ip = ["192.168.66.87", "192.168.66.88"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.app.etcd]
+    name = "Etcd Cluster"
+    ip = ["192.168.66.86", "192.168.66.87", "192.168.66.88"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.lab.master]
+    name = "Kubernetes Master"
+    ip = ["192.168.66.86"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.lab.node]
+    name = "Kubernetes Node"
+    ip = ["192.168.66.87", "192.168.66.88"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.lab.etcd]
+    name = "Etcd Cluster"
+    ip = ["192.168.66.86", "192.168.66.87", "192.168.66.88"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.harbor]
+    name = "Harbor Registry"
+    ip = ["192.168.66.89"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.nfs]
+    name = "NFS Server"
+    ip = ["192.168.66.89"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.mysql]
+    name = "MySQL Server"
+    ip = ["192.168.66.86"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.git]
+    name = "Git Server"
+    ip = ["192.168.66.86"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.redis]
+    name = "Redis Server"
+    ip = ["192.168.66.89"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.nginx]
+    name = "Nginx Server"
+    ip = ["192.168.66.87"]
+    port = 22
+    username = "root"
+    password = "dd@2019"
+
+    [server.rabbitmq]
+    name = "RabbitMQ Server"
+    ip = ["192.168.66.87"]
+    port = 22
+    username = "root"
+    password = "dd@2"
+
+# 包管理
+[package]
+# 前端包的名字
+front = "bigdata-web.tar.gz"
+harbor = "harbor-offline-installer-v1.7.1.tgz"
+mysql = "mysql-8.0.19-linux-glibc2.12-x86_64.tar.xz"
+docker = ["containerd.io-1.2.6-3.3.el7.x86_64.rpm", "docker-ce-19.03.8-3.el7.x86_64.rpm", "docker-ce-cli-19.03.8-3.el7.x86_64.rpm"]
+master = ["kubectl", "kube-apiserver", "kube-controller-manager", "kube-scheduler"]
+node = ["kubelet", "kube-proxy"]
+addon = ["pause-amd64:3.1", "coredns:1.3.1", "nginx-ingress-controller:0.26.1"]
+
+# 桶信息
+[bucket]
+bucketname = "zjhw-deliver"
+accesskey = "I3KX4SLSKGDLC"
+secretkey = "LAfiTzX7gvr3QXqzu"
+endpoint = "https://obs.cn-east-2.myhuaweicloud.com"
+# 学校目录
+directory = "zjhw"
