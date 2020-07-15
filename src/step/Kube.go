@@ -284,6 +284,29 @@ func deployNode(config *viper.Viper, node string, nodePkg, dockerPkg []interface
 
 func deployFlannel(config *viper.Viper, node string, etcdCluster string, wg *sync.WaitGroup) {
 	defer wg.Done()
+	flannelAttr := new(temp.FlannelAttr)
+	flannelAttr.ETCD = etcdCluster
 
+	flannelConf := utils.RendTemp(temp.FlannelConf, &flannelAttr)
+	info := GetHostInfo(config, node)
+	utils.SSHExec(node, info, "yum install -y flannel && mkdir -p /ddhome/local/docker/data")
+	utils.SFTPut(node, info, temp.FlannelJSON, "/root/flannel-config.json")
+	utils.SFTPut(node, info, flannelConf, "/etc/sysconfig/flanneld")
+	utils.SFTPut(node, info, temp.Dockerservice, "/usr/lib/systemd/system/docker.service")
+	utils.SSHExec(node, info, "etcdctl --ca-file=/etc/etcd/etcdSSL/ca.pem  --cert-file=/etc/etcd/etcdSSL/etcd.pem   --key-file=/etc/etcd/etcdSSL/etcd-key.pem set /k8s/network/config < /root/flannel-config.json && "+
+		"systemctl enable flanneld --now && "+
+		"iptables -P FORWARD ACCEPT")
 
+	// 准备etcd证书
+	utils.SSHExec(node, info, "mkdir -p /etc/etcd/etcdSSL")
+	utils.SFTPutFile(node, info, "tmp/etcd/etcd-key.pem", "/etc/etcd/etcdSSL/etcd-key.pem")
+	utils.SFTPut(node, info, "tmp/etcd/ca.pem", "/etc/etcd/etcdSSL/ca.pem")
+	utils.SFTPut(node, info, "tmp/etcd/etcd.pem", "/etc/etcd/etcdSSL/etcd.pem")
+	utils.SSHExec(node, info, "if `id etcd &> /dev/null`;then echo '';else useradd etcd;fi && chown -R etcd /etc/etcd/etcdSSL")
+
+	// 启动flannel
+	utils.SSHExec(node, info, "systemctl enable flanneld --now && "+
+		"systemctl daemon-reload && "+
+		"systemctl restart docker && "+
+		"iptables -P FORWARD ACCEPT")
 }

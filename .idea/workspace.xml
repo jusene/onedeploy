@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3eb653a-8f36-4c85-b097-7457265d1576" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/temp/apiserver.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/temp/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/temp/controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/temp/flannel.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/temp/kubelet.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/temp/kubeservice.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/temp/proxy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/temp/scheduler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/temp/token.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/Kube.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Kube.go" afterDir="false" />
-    </list>
+    <list default="true" id="c3eb653a-8f36-4c85-b097-7457265d1576" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

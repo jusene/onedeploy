@@ -29,6 +29,8 @@ func main() {
 		goto HARBOR
 	case "NFS":
 		goto NFS
+	case "GIT":
+		goto GIT
 	case "REDIS":
 		goto REDIS
 	case "MYSQL":
@@ -39,6 +41,10 @@ func main() {
 		goto KUBEAPP
 	case "KUBELAB":
 		goto KUBELAB
+	case "IMAGE":
+		goto IMAGE
+	case "COREDNS":
+		goto COREDNS
 	default:
 		fmt.Println("Let's GO")
 	}
@@ -49,63 +55,83 @@ func main() {
 **********`)
 	step.FileCheck(config)
 
-	INIT:
-		log.Println(`
+INIT:
+	log.Println(`
 ********** 
 初始化服务器
 **********`)
 	step.SysInit(config)
 
-	HARBOR:
-		log.Println(`
+HARBOR:
+	log.Println(`
 ********** 
 部署Harbor镜像仓库
 **********`)
 	step.DeployHarbor(config)
 
-	NFS:
-		log.Println(`
+NFS:
+	log.Println(`
 ********** 
 部署NFS服务
 **********`)
 	step.DeployNFS(config)
 
-	REDIS:
+	GIT:
 		log.Println(`
+********** 
+部署GIT服务
+**********`)
+	step.DeployGit(config)
+
+REDIS:
+	log.Println(`
 ********** 
 部署REDIS服务
 **********`)
 	step.DeployRedis(config)
 
-	MYSQL:
-		log.Println(`
+MYSQL:
+	log.Println(`
 ********** 
 部署MYSQL服务
 **********`)
 	step.DeployMysql(config)
 
-	RABBITMQ:
-		log.Println(`
+RABBITMQ:
+	log.Println(`
 ********** 
 部署RABBITMQ服务
 **********`)
 	step.DeployRabbitMQ(config)
 
-	KUBEAPP:
-		log.Println(`
+KUBEAPP:
+	log.Println(`
 ********** 
 部署应用环境K8S服务
 **********`)
 	step.DeployK8S(config, "app")
 
-	KUBELAB:
-		log.Println(`
+KUBELAB:
+	log.Println(`
 ********** 
 部署应用环境K8S服务
 **********`)
 	step.DeployK8S(config, "lab")
-}
+IMAGE:
+	log.Println(`
+********** 
+部署镜像
+**********`)
+	step.PullImage(config)
 
+COREDNS:
+	log.Println(`
+********** 
+部署coredns服务
+**********`)
+	step.DeployCoreDNS(config)
+
+}
 /*
 * 读取配置文件
  */

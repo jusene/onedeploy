@@ -14,3 +14,17 @@ FLANNEL_ETCD_PREFIX="/k8s/network"
 FLANNEL_OPTIONS="--etcd-cafile=/etc/etcd/etcdSSL/ca.pem  --etcd-certfile=/etc/etcd/etcdSSL/etcd.pem  --etcd-keyfile=/etc/etcd/etcdSSL/etcd-key.pem"
 {{ end }}
 `
+
+type FlannelAttr struct {
+	ETCD string
+}
+
+var FlannelJSON = `
+{
+  "Network": "172.16.0.0/16",
+  "SubnetLen": 24,
+  "Backend": {
+    "Type": "vxlan"
+  }
+}
+`
