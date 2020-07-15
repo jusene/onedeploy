@@ -2,8 +2,8 @@ package main
 
 import (
 	"deploy/step"
-	"fmt"
 	"github.com/spf13/viper"
+	"fmt"
 	"log"
 	"strings"
 )

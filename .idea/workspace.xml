@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3eb653a-8f36-4c85-b097-7457265d1576" name="Default Changelist" comment="" />
+    <list default="true" id="c3eb653a-8f36-4c85-b097-7457265d1576" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deploy/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step/Coredns.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Coredns.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step/Git.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Git.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step/Harbor.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Harbor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step/Image.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Image.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step/Kube.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Kube.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step/Mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step/Nfs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Nfs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step/RabbitMQ.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/RabbitMQ.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step/Redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/step/SysInit.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/SysInit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/sftp.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/sftp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/ssh.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ssh.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,10 +72,21 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\aiDeploy\src" />
-      <recent name="C:\Users\Administrator\Desktop\aiDeploy\bin" />
+      <recent name="C:\Users\Administrator\Desktop\aiDeploy\src\deploy" />
+      <recent name="C:\Users\Administrator\Desktop\aiDeploy\src\zjhw.com\step" />
+      <recent name="C:\Users\Administrator\Desktop\aiDeploy\src\zjhw.com" />
+      <recent name="C:\Users\Administrator\Desktop\aiDeploy\src\zjhw.com\deploy" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build Image.go">
+    <configuration name="go build Image.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="aiDeploy" />
+      <working_directory value="$PROJECT_DIR$/src" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/step/Image.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build temp.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="aiDeploy" />
       <working_directory value="$PROJECT_DIR$/src" />
@@ -69,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Image.go" />
         <item itemvalue="Go Build.go build temp.go" />
       </list>
     </recent_temporary>
@@ -80,33 +109,37 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="692" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594708805017">
+    <state x="692" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594807246063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="692" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594708805017" />
+    <state x="692" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594807246063" />
+    <state x="668" y="154" key="#go_build_Image.go" timestamp="1594795048528">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="154" key="#go_build_Image.go/0.0.1920.1040@0.0.1920.1040" timestamp="1594795048528" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1594627234602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594627234602" />
-    <state width="1754" height="243" key="GridCell.Tab.0.bottom" timestamp="1594719145749">
+    <state width="1754" height="243" key="GridCell.Tab.0.bottom" timestamp="1594805837414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1754" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594719145749" />
-    <state width="1754" height="243" key="GridCell.Tab.0.center" timestamp="1594719145749">
+    <state width="1754" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594805837414" />
+    <state width="1754" height="243" key="GridCell.Tab.0.center" timestamp="1594805837414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1754" height="243" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594719145749" />
-    <state width="1754" height="243" key="GridCell.Tab.0.left" timestamp="1594719145749">
+    <state width="1754" height="243" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594805837414" />
+    <state width="1754" height="243" key="GridCell.Tab.0.left" timestamp="1594805837414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1754" height="243" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594719145749" />
-    <state width="1754" height="243" key="GridCell.Tab.0.right" timestamp="1594719145749">
+    <state width="1754" height="243" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594805837414" />
+    <state width="1754" height="243" key="GridCell.Tab.0.right" timestamp="1594805837414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1754" height="243" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594719145749" />
-    <state x="361" y="39" key="SettingsEditor" timestamp="1594627328552">
+    <state width="1754" height="243" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594805837414" />
+    <state x="361" y="39" key="SettingsEditor" timestamp="1594808031742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="361" y="39" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594627328552" />
+    <state x="361" y="39" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594808031742" />
   </component>
 </project>
