@@ -123,7 +123,8 @@ apps = ["huayun-lab-redis", "huayun-lab-auth", "huayun-lab-system", "huayun-lab-
 # 包管理
 [package]
 # 前端包的名字
-front = "bigdata-web.tar.gz"
+userpkg = "bigdata-web.tar.gz"
+adminpkg = "bigdata-web.tar.gz"
 harbor = "harbor-offline-installer-v1.7.1.tgz"
 mysql = "mysql-8.0.19-linux-glibc2.12-x86_64.tar.xz"
 docker = ["containerd.io-1.2.6-3.3.el7.x86_64.rpm", "docker-ce-19.03.8-3.el7.x86_64.rpm", "docker-ce-cli-19.03.8-3.el7.x86_64.rpm"]

@@ -45,6 +45,8 @@ func main() {
 		goto IMAGE
 	case "COREDNS":
 		goto COREDNS
+	case "NGINX":
+		goto NGINX
 	default:
 		fmt.Println("Let's GO")
 	}
@@ -130,6 +132,13 @@ COREDNS:
 部署coredns服务
 **********`)
 	step.DeployCoreDNS(config)
+
+	NGINX:
+		log.Println(`
+********** 
+部署nginx服务
+**********`)
+	step.DeployNginx(config)
 
 }
 /*

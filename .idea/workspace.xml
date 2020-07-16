@@ -2,22 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3eb653a-8f36-4c85-b097-7457265d1576" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/bucket_operations_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/concurrent_copy_part_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/concurrent_download_object_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/concurrent_upload_part_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/create_folder_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/delete_objects_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/download_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/list_objects_in_folder_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/list_objects_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/list_versions_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/object_meta_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/object_operations_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/restore_object_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/simple_multipart_upload_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/examples/temporary_signature_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/main/obs_go_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/conf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/const.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/convert.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/temporary.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/trait.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/hwcloud/obs/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/step/Nginx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/temp/nginx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deploy/utils/bucket.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/Coredns.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Coredns.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/Git.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Git.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/Harbor.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Harbor.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/Image.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Image.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/Kube.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Kube.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/Mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/Nfs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Nfs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/RabbitMQ.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/RabbitMQ.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/Redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/Redis.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step/SysInit.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/step/SysInit.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/sftp.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/sftp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/ssh.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ssh.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/config/deploy.toml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/config/deploy.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/deploy.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +69,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1echfBMhRpQ2XMTZpA8M32dqlVo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -71,8 +92,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\aiDeploy\src" />
       <recent name="C:\Users\Administrator\Desktop\aiDeploy\src\deploy" />
+      <recent name="C:\Users\Administrator\Desktop\aiDeploy\src" />
       <recent name="C:\Users\Administrator\Desktop\aiDeploy\src\zjhw.com\step" />
       <recent name="C:\Users\Administrator\Desktop\aiDeploy\src\zjhw.com" />
       <recent name="C:\Users\Administrator\Desktop\aiDeploy\src\zjhw.com\deploy" />
@@ -104,6 +125,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
